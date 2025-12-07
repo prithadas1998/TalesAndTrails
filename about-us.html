@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1" name='viewport'>
+<title>Smart Print</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+<link rel="stylesheet" type="text/css" href="css/aboutstyle.css">
+<style>
+  .show{
+    display:block;
+  }
+  .hide{
+    display: none;
+  }
+  .orbit{
+    z-index: 99;
+  }
+</style>
+</head>
+<body>
+
+  <div class="top-menu">
+    <div class="container">
+      <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container-fluid">
+                            <a class="navbar-brand" href="home.html"><img src="images/home.jpg" style="width: 20%;" /></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="home.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Blogs</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact-us.html">Contact us</a>
+                                    </li>
+                                    <!-- <li class="nav-item"> -->
+                                        <!-- <a class="nav-link blow-btn" href="signin.html">Sign in</a> -->
+                                    <!-- </li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+    </div>
+  </div>
+  <!-- Header -->
+
+  <!-- Inner Banner -->
+  <section class="inr-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2>Welcome to Tales And Trails!</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Inner Banner -->
+
+<!-- About -->
+  <div class="about-bg">
+    <div class="arrow-pl"></div>
+    <div class="container">
+      <div class="row">
+        <div class="left-con" style="margin-bottom: 50px; font-size: 18px;">
+        <h2>Who Are We?</h2>
+        <br>We are, a collective of passionate travelers, adventure seekers, and digital nomads dedicated to transforming the way you experience the world. More than just a travel blog, we are your trusted travel companion and advisor, committed to helping you turn your wanderlust into reality.
+        We believe that travel is the most powerful form of education. It’s not about seeing landmarks; it’s about collecting stories, forging connections, and discovering as much about yourself as you do about the destinations you visit.
+        </div>
+        
+          <div class="left-con" style="margin-bottom: 50px; font-size: 18px;">
+              <h3>Our Mission: Inspire, Plan, and Support</h3>
+              <br>
+              <ol>
+                <li><strong>Inspire Meaningful Travel:</strong> We go beyond the glossy photos to share honest, insightful, and unique travel narratives. 
+                  We aim to inspire a culture of curiosity and discovery, encouraging you to seek out authentic local experiences and hidden travel gems.</li>
+                <br><li>
+                  <strong>Enable Smart Planning:</strong> We equip you with the travel tools and actionable advice needed to plan smarter, travel deeper, and navigate the complexities of global travel experiences seamlessly. 
+                  From budget breakdowns to comprehensive guides, we make expert planning accessible.
+                </li>
+                <br><li>
+                  <strong>Offer Reliable Support:</strong> We understand that even the best-laid plans can face travel hiccups. 
+                  Our platform is designed to provide you with real-time support and the expertise necessary to navigate unexpected challenges with ease.
+                </li>
+              </ol>
+           </div> 
+        
+           <div class="left-con" style="font-size: 18px;">
+              <h3>Why Trust Us?</h3>
+              <br>
+              <ol>
+                <li><strong>Real-World Experience:</strong> Every guide, review, and itinerary we publish is built on firsthand experience. We've been there, slept there, and eaten that—so you don't have to rely on guesswork.</li>
+                <br><li>
+                  <strong>Commitment to Honesty:</strong> We proudly utilize affiliate links to sustain our work, but our primary commitment is to you. Our reviews are always independent, honest, and focused on providing genuine value.
+                </li>
+                <br><li>
+                  <strong>Focus on the Journey:</strong> Our content is tailored not just for where you go, but for how you grow. We offer tips on sustainable travel, responsible tourism, and maximizing the personal enrichment of your adventures.
+                </li>
+              </ol>
+           </div> 
+                
+      </div>
+    </div>
+  </div>
+<!-- About -->
+
+
+<!-- Footer -->
+<footer class="pd-box">
+  <div class="container">
+    <div class="footer-con">
+      <p>Tales and Trails © 2025 - future</p>
+    </div>
+  </div>
+</footer>
+<!-- Footer -->
+
+</div>
+
+
+
+<script src="js/jquery.min.js"></script> 
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript">
+  function events(){
+    var id = document.querySelector('.btnactive').id;
+    let className = document.getElementById(id);
+    className.classList.remove("btnactive");
+    var Class = document.getElementById("event-btn");
+    Class.classList.add('btnactive');
+
+    var divid = document.querySelector('.show').id;
+    console.log(divid);
+    let divName = document.getElementById(divid);
+    console.log(divName);
+    divName.classList.add("hide");
+    divName.classList.remove("show");
+
+    var divClass = document.getElementById("event");
+    divClass.classList.add('show');
+    divClass.classList.remove("hide");
+  }
+  function who(){
+    var id = document.querySelector('.btnactive').id;
+    let className = document.getElementById(id);
+    className.classList.remove("btnactive");
+    var Class = document.getElementById("who-btn");
+    Class.classList.add('btnactive');
+    
+
+    var divid = document.querySelector('.show').id;
+    console.log(divid);
+    let divName = document.getElementById(divid);
+    console.log(divName);
+    divName.classList.add("hide");
+    divName.classList.remove("show");
+
+    var divClass = document.getElementById("who");
+    divClass.classList.add('show');
+    divClass.classList.remove("hide");
+  }
+
+  function why(){
+    var id = document.querySelector('.btnactive').id;
+    let className = document.getElementById(id);
+    className.classList.remove("btnactive");
+    var Class = document.getElementById("why-btn");
+    Class.classList.add('btnactive');
+
+    var divid = document.querySelector('.show').id;
+    console.log(divid);
+    let divName = document.getElementById(divid);
+    console.log(divName);
+    divName.classList.add("hide");
+    divName.classList.remove("show");
+
+    var divClass = document.getElementById("why");
+    divClass.classList.add('show');
+    divClass.classList.remove("hide");
+  }
+  function vision(){
+    var id = document.querySelector('.btnactive').id;
+    let className = document.getElementById(id);
+    className.classList.remove("btnactive");
+    var Class = document.getElementById("vision-btn");
+    Class.classList.add('btnactive');
+
+    var divid = document.querySelector('.show').id;
+    console.log(divid);
+    let divName = document.getElementById(divid);
+    console.log(divName);
+    divName.classList.add("hide");
+    divName.classList.remove("show");
+
+    var divClass = document.getElementById("vision");
+    divClass.classList.add('show');
+    divClass.classList.remove("hide");
+
+
+  }
+  function value(){
+    var id = document.querySelector('.btnactive').id;
+    let className = document.getElementById(id);
+    className.classList.remove("btnactive");
+    var Class = document.getElementById("value-btn");
+    Class.classList.add('btnactive');
+
+
+
+    var divid = document.querySelector('.show').id;
+    console.log(divid);
+    let divName = document.getElementById(divid);
+    console.log(divName);
+    divName.classList.add("hide");
+    divName.classList.remove("show");
+
+    var divClass = document.getElementById("values");
+    divClass.classList.add('show');
+    divClass.classList.remove("hide");
+  }
+
+  
+</script>
+
+</body>
+</html>
